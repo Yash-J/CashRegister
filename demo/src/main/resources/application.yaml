@@ -1,0 +1,17 @@
+cash-register:
+
+  # Select currency: "US" for dollars, "FRANCE" for euros
+  currency: US
+
+  # Random divisor: if the change in cents is divisible by this, random change is used
+  random-divisor: 3
+
+  # Input file to read (placed in src/main/resources)
+  # Change this line to switch test cases
+  input-file: us_input.txt
+
+  # Optional: you can list other test files
+  test-files:
+    - us_input.txt          # normal US cases
+    - french_input.txt      # normal France/Euro cases
+    - edge_cases.txt        # edge cases
